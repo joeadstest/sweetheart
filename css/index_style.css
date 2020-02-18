@@ -1,0 +1,839 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.m_header {
+    display: none;
+}
+
+.parent {
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    z-index: 10;
+    top: 5%;
+    left: 42.8%
+}
+
+.logo img {
+    height: 100%;
+    width: 100%;
+}
+
+/* #page-top {
+    position: fixed;
+    right: 30px;
+    bottom: 60px;
+    color: white;
+} */
+
+.primary-bg-color-1 {
+    background-color: #FFEECA;
+}
+
+.primary-bg-color-2 {
+    background-color: #F9D4D8;
+}
+
+.primary-bg-color-3 {
+    background-color: #916134;
+}
+
+/* **********首頁介紹區塊 intro_area********** */
+
+/* **********首頁介紹區塊 intro_area********** */
+
+/* **********首頁介紹區塊 intro_area********** */
+
+.intro_area {
+    display: block;
+    position: absolute;
+    z-index: 8;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 40%;
+}
+
+.intro_right {
+    right: 15%;
+}
+
+.intro_left {
+    left: 15%;
+}
+
+.intro_area h1 {
+    color: #6A3906;
+    font-size: 7vmin;
+}
+
+.intro_button {
+    display: block;
+    width: 22vmin;
+    height: 2.5vmin;
+    padding: 1.8vmin;
+    font-size: 2vmin;
+    text-align: center;
+    color: #6A3906;
+    border: 0.2rem solid #6A3906;
+    border-radius: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.intro_button:hover {
+    background-color: #6A3906;
+    color: white;
+}
+
+.btn_left {
+    margin-right: auto;
+}
+
+.btn_right {
+    margin-left: auto;
+}
+
+/* **********漂浮小圖********** */
+
+/* **********漂浮小圖********** */
+
+/* **********漂浮小圖********** */
+
+.r_strawberry {
+    position: absolute;
+    z-index: 4;
+    top: 20%;
+    right: 15%;
+    width: 8%;
+}
+
+.r_coffee_beans {
+    position: absolute;
+    z-index: 4;
+    top: 75%;
+    right: 10%;
+    width: 5%;
+}
+
+.l_orange {
+    position: absolute;
+    z-index: 4;
+    top: 20%;
+    left: 18%;
+    width: 10%;
+}
+
+.l_wheat {
+    position: absolute;
+    z-index: 4;
+    top: 75%;
+    left: 6%;
+    width: 22%;
+}
+
+/* **********首頁導覽********** */
+
+/* **********首頁導覽********** */
+
+/* **********首頁導覽********** */
+
+.navbar {
+    position: absolute;
+    z-index: 8;
+    display: flex;
+    justify-content: space-between;
+    top: 8%;
+    width: 26vmin;
+    left: 15%;
+}
+
+.navbar a {
+    display: block;
+    text-decoration: none;
+    color: #916134;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.navbar a:hover {
+    color: #55381d;
+}
+
+/* **********首頁icon********** */
+
+/* **********首頁icon********** */
+
+/* **********首頁icon********** */
+
+.nav_icon {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 8%;
+    right: 15%;
+    width: 18vmin;
+    z-index: 8;
+}
+
+.nav_icon i {
+    color: #916134;
+}
+
+.nav_icon i:hover {
+    color: #55381d;
+}
+
+/*子類別*/
+
+.child {
+    overflow: hidden;
+    width: 400px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transition: 1000ms;
+}
+
+@media screen and (max-width: 1279px) {
+    .header {
+        display: none;
+    }
+    .m_header {
+        display: block;
+    }
+    .m_header {
+        margin: 0;
+        padding: 0;
+    }
+    .m_header>.top_img {
+        background-color: #FCEBC8;
+        height: 50vh;
+        width: 100%;
+        position: relative;
+    }
+    .m_header>.bottom_img {
+        background-color: #FFC9CC;
+        height: 50vh;
+        width: 100%;
+        position: relative;
+    }
+    .m_header .main_img>img {
+        width: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -25%;
+        margin-left: -25%;
+    }
+    .top_img>.m_logo {
+        position: absolute;
+        width: 32%;
+        top: 5%;
+        left: 34%;
+    }
+    .m_header .intro_area {
+        position: absolute;
+        top: 57%;
+        left: 18.5%;
+    }
+    .m_header .intro_area h1 {
+        color: white;
+        font-size: 10vmin;
+        margin-bottom:4%;
+    }
+    .m_header .intro_button {
+        width: 54%;
+        height: 5.5vmin;
+        line-height: 5.5vmin;
+        font-size: 3.7vmin;
+        text-align: center;
+        color: #6A3906;
+        border: 0.1rem solid #6A3906;
+        border-radius: 8px;
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .m_header .btn_top {
+        margin: 0 auto;
+    }
+    .m_header .btn_bottom {
+        margin: 0 auto;
+    }
+    .m_header .intro_button:hover {
+        background-color: #6A3906;
+        color: white;
+    }
+    .m_navbar {
+        display: none;
+        position: absolute;
+        z-index: 55;
+    }
+    .menu-icon {
+        display: block;
+        color: #6A3906;
+        float: right;
+        margin: 5% 5%;
+    }
+    .m_navbar {
+        padding: 0;
+        top: 61px;
+        width: 100%;
+        right: 0;
+        height: calc(50vh - 61px);
+    }
+    .m_navbar>ul {
+        display: block;
+        list-style-type: none;
+        height: 100vh;
+        width: 100%;
+        padding-left: 0%;
+    }
+    .m_navbar>ul>li {
+        background-color: rgba(255, 255, 255, 0.5);
+        text-align: center;
+    }
+    .m_navbar>ul>li>a {
+        display: block;
+        text-decoration: none;
+        color: #6A3906;
+        height: 5vh;
+        line-height: 5vh;
+    }
+    .t_strawberry {
+        position: absolute;
+        z-index: 4;
+        top: 10%;
+        right: 10%;
+        width: 17%;
+    }
+    .t_coffee_beans {
+        position: absolute;
+        z-index: 4;
+        top: 39%;
+        right: 78%;
+        width: 10%;
+    }
+    .b_orange {
+        position: absolute;
+        z-index: 4;
+        top: 55%;
+        left: 8%;
+        width: 20%;
+    }
+    .b_wheat_a {
+        position: absolute;
+        z-index: 4;
+        top: 90%;
+        left: 7%;
+        width: 30%;
+    }
+    .b_wheat_b {
+        position: absolute;
+        z-index: 4;
+        top: 90%;
+        right: 14%;
+        width: 7%;
+    }
+}
+
+/* **********左右偵測區塊********** */
+
+/* **********左右偵測區塊********** */
+
+/* **********左右偵測區塊********** */
+
+.hit-test {
+    display: block;
+    transition: 1000ms;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    z-index: 5;
+    top: 0;
+    opacity: 0.5;
+}
+
+.hit-test-left {
+    left: 0;
+}
+
+.hit-test-right {
+    right: 0;
+}
+
+/* **********美味三原則********** */
+
+/* **********美味三原則********** */
+
+/* **********美味三原則********** */
+
+#three_principles {
+    margin: 8%;
+    text-align: center;
+}
+
+#three_principles h2 {
+    font-size: 7vmin;
+    margin: 0;
+    color: #6A3906;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#three_principles h3 {
+    font-size: 4vmin;
+    margin: 0;
+    letter-spacing: 3.5vmin;
+    margin-left: 3vmin;
+}
+
+/* **********內容區塊********** */
+
+/* **********內容區塊********** */
+
+/* **********內容區塊********** */
+
+.area_container {
+    max-width: 1440px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.area-content {
+    display: flex;
+    opacity: 0;
+    transform: translate(0, 10vh);
+    transition: all 1.4s;
+}
+
+.area-content.visible {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.area-content>div {
+    flex-basis: 50%;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.photo>img {
+    width: 100%;
+}
+
+.area-content .text {
+    margin: 0;
+    padding-top: 3%;
+}
+
+.area-content:nth-child(even)>.text {
+    order: 1;
+}
+
+.area-content:nth-child(odd) .title {
+    display: block;
+    line-height: 200%;
+    padding-left: 24%;
+    margin-right: 34%;
+    color: #40210F;
+    background-color: #FFC9CC;
+    font-size: 2em;
+}
+
+.area-content:nth-child(even) .title {
+    display: block;
+    line-height: 200%;
+    padding-left: 12%;
+    margin-left: 34%;
+    color: #40210F;
+    background-color: #FFEECA;
+    font-size: 2em;
+}
+
+.area-content:nth-child(odd) .description {
+    border-top: 1px solid black;
+    margin-left: 24%;
+}
+
+.area-content:nth-child(even) .description {
+    border-top: 1px solid black;
+    margin-right: 24%;
+}
+
+.area-content:nth-child(odd) p {
+    margin-right: 24%;
+    font-size: 1.2em;
+}
+
+.area-content:nth-child(even) p {
+    margin-left: 24%;
+    font-size: 1.2em;
+}
+
+@media screen and (max-width: 1279px) {
+    .area-content {
+        display: block;
+        opacity: 0;
+        transform: translate(0, 10vh);
+        transition: all 1.4s;
+    }
+    .area-content.visible {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+    .photo>img {
+        width: 100%;
+    }
+    .area-content .text {
+        margin: 0;
+    }
+    .area-content:nth-child(odd) .title {
+        text-align: center;
+        margin: 0 0;
+        padding: 0 0;
+    }
+    .area-content:nth-child(even) .title {
+        text-align: center;
+        margin: 0 0;
+        padding: 0 0;
+    }
+    .area-content:nth-child(odd) .description {
+        margin: auto;
+        padding: 2% 0;
+    }
+    .area-content:nth-child(even) .description {
+        margin: auto;
+        padding: 2% 0;
+    }
+    .area-content:nth-child(odd) p {
+        margin: auto;
+    }
+    .area-content:nth-child(even) p {
+        margin: auto;
+    }
+}
+
+/***************************/
+
+/*來自台灣最純粹的美味purest*/
+
+/***************************/
+
+.purest {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    background-image: url("../images/banner-04.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    margin: 10% 0;
+}
+
+.purest_text {
+    position: absolute;
+    width: 80%;
+    height: 34%;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    margin-top: -4%;
+    margin-left: -40%;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #6A3906;
+}
+
+.purest_text h2 {
+    font-size: 2.5em;
+    letter-spacing: .3em;
+    border-bottom: 1.5px solid #6A3906;
+    margin: 1% 17.5%;
+}
+
+.purest_text h3 {
+    font-size: 1.5em;
+    margin: -1%;
+}
+
+@media screen and (max-width: 1279px) {
+    .purest {
+        position: relative;
+        width: 100%;
+        height: 30vh;
+        background-image: url("../images/banner-04.jpg");
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: left bottom;
+        margin: 10% 0;
+    }
+    .purest_text {
+        position: absolute;
+        width: 80%;
+        height: 71px;
+        text-align: center;
+        top: 50%;
+        left: 50%;
+        margin-top: -4%;
+        margin-left: -40%;
+        background-color: rgba(255, 255, 255, 0.5);
+        color: #6A3906;
+    }
+    .purest_text h2 {
+        font-size: 1.5em;
+        letter-spacing: .1em;
+        border-bottom: 1.5px solid #6A3906;
+        margin: 1% 0%;
+    }
+    .purest_text h3 {
+        font-size: 1em;
+        margin: -1%;
+    }
+}
+
+/*******************/
+
+/*關於我們 About Us*/
+
+/*******************/
+
+.about_rt_container {
+    max-width: 1140px;
+    width: 90%;
+    margin: 5% auto;
+    display: flex;
+}
+
+.m_about_rt_container {
+    display: none;
+}
+
+.left_bg {
+    position: relative;
+    background-color: #FFECC8;
+    height: 500px;
+    width: 500px;
+    order: -1;
+}
+
+.left_bg img {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}
+
+.about_rt_content {
+    margin-top: 18%;
+    width: 61%;
+}
+
+.about_rt_content .title {
+    color: #40210F;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 3em;
+    border-bottom: 1px solid black;
+    padding-left: 29%;
+    margin-right: 28%;
+}
+
+.about_rt_content .about_description {
+    padding-left: 29%;
+    font-size: 1.2em;
+}
+
+@media screen and (max-width: 1279px) {
+    .about_rt_container {
+        display: none;
+    }
+    .m_about_rt_container {
+        display: block;
+    }
+    .m_about_rt_content {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .m_about_rt_content img {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    .m_about_rt_content .title {
+        color: #40210F;
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        font-size: 2em;
+    }
+    .m_about_rt_content .m_about_description {
+        font-size: 0.85em;
+    }
+}
+
+/*******************/
+
+/*聯絡我們 Contact Us*/
+
+/*******************/
+
+.m_contact_us_container {
+    display: none;
+}
+
+.contact_us_container {
+    max-width: 1140px;
+    width: 90%;
+    margin: 5% auto;
+    display: flex;
+}
+
+.right_bg {
+    position: relative;
+    background-color: #FFC9CC;
+    height: 500px;
+    width: 500px;
+    /* order:-1; */
+}
+
+.right_bg img {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+}
+
+.contact_us_content {
+    margin-top: 18%;
+    width: 61%;
+}
+
+.contact_us_content .title {
+    color: #40210F;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 3em;
+    border-bottom: 1px solid black;
+    margin-left: 28%;
+}
+
+.contact_us_content .contact_us_description {
+    padding-left: 29%;
+    font-size: 1.2em;
+}
+
+@media screen and (max-width: 1279px) {
+    .contact_us_container {
+        display: none;
+    }
+    .m_contact_us_container {
+        display: block;
+        margin-top: 16%;
+    }
+    .m_contact_us_content {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .m_contact_us_content img {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    .m_contact_us_content .title {
+        color: #40210F;
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        font-size: 2em;
+    }
+    .m_contact_us_content .m_contact_description {
+        font-size: 0.85em;
+    }
+}
+
+/* **********footer********** */
+
+/* **********footer********** */
+
+/* **********footer********** */
+
+.container {
+    display: flex;
+    max-width: 1140px;
+    width: 90%;
+    margin: auto;
+    position: relative;
+}
+
+.footer {
+    height: 200px;
+    display: flex;
+}
+
+.footer-link {
+    width: 55%;
+    padding-left: 20px;
+    align-items: center;
+}
+
+.footer-link h4 {
+    color: white;
+    padding-left: 40px;
+    letter-spacing: .1em;
+}
+
+.footer-link ul {
+    display: flex;
+    margin: 5px 0px;
+}
+
+.footer-link ul li {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-link li+li::before {
+    content: '|';
+    color: white;
+    display: inline-block;
+    margin: 0.4em 1em;
+}
+
+.footer-link ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    letter-spacing: .1em;
+}
+
+.footer-link ul li a:hover {
+    color: #FFEECA;
+}
+
+.footer-list-item {
+    display: inline-block;
+    width: 45%;
+    margin: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.fa-facebook-square, .fa-instagram {
+    color: rgb(255, 255, 255);
+    padding: 30px 40px 0px 0px;
+}
+
+.fa-facebook-square:hover, .fa-instagram:hover {
+    color: #FFEECA;
+}
+
+@media screen and (max-width: 1279px) {
+    .footer {
+        visibility: hidden;
+    }
+}
+
+.copyright {
+    background-color: #613E00;
+    text-align: center;
+    line-height: 40px;
+    color: #fff5e0;
+    font-size: 12px;
+}

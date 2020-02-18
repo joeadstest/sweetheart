@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>購物車 | Roll & Tart | 手作甜點工作室</title>
+    
+    <script src="https://unpkg.com/vue/dist/vue.min.js"></script>
+    <link rel="icon" href="images/logo-title.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link
+    href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400,500,700,900&display=swap&subset=chinese-traditional"
+    rel="stylesheet">
+    <link rel="stylesheet" href="css/cart.css">
+</head>
+
+
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="rt_index.html" class="logo"><img src="images/logo_main.png" alt=""></a>
+            <div class="navbar">
+                <ul>
+                    <li><a href="member_login.html">會員專區</a></li>
+                    <li><a href="product.html">商品總覽</a></li>
+                </ul>
+            </div>
+            <div class="nav-icon">
+                <div class="list-item">
+                    <a href="cart.html">
+                        <i class="fas fa-shopping-cart fa-lg"></i>
+                    </a>
+                </div>
+                <div class="list-item">
+                    <a href="faq.html">
+                        <i class="fas fa-question-circle fa-lg"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="product_list">
+        <div class="list-container">
+            <div class="product">
+                <div class="item">
+                    <div class="icon">
+                        <div class="list">1</div>
+                        <p class="color01">購物清單</p>
+                    </div>
+                    <div class="line"></div>
+                    <div class="icon">
+                        <div class="check">2</div>
+                        <p class="color02">訂單確認</p>
+                    </div>
+                </div>
+                <div id="app">
+                    <div class="list-container">
+                      <div class="item_header">
+                        <div class="item_detail">商品</div>
+                        <div class="price">單價</div>
+                        <div class="count">數量</div>
+                        <div class="amount">總計</div>
+                        <div class="operate">操作</div>
+                      </div>
+                      <div class="item_container" v-for="(item, index) in itemList" :key="item.id">
+                        <div class="item_header item_body">
+                          <div class="item_detail">
+                            <img v-bind:src="item.imgUrl" alt="">
+                            <div class="name">{{item.itemName}}</div>
+                          </div>
+                
+                          <div class="price"><span>$</span>{{item.price}}</div>
+                          <div class="count">
+                            
+                                <div class="content">
+                                    <span @click="handleSub(item)" class="qt-minus">-</span>
+                                    <span class="qt"> {{item.count}}</span>
+                                    <span @click="handlePlus(item)" class="qt-plus">+</span>
+                                </div>
+                                   
+                           
+                           
+                          </div>
+                          <div class="amount">{{item.price * item.count}}</div>
+                          <div class="operate">
+                            <button @click="handledelete(index)">
+                                X
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                
+
+                <div class="product-button">
+                    <input class="btn btn01-color" type="submit" value="訂單結帳">
+                    <input class="btn btn02-color" type="submit" value="取消所有訂單">
+                </div> 
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer primary-bg-color-3">
+        <div class="container">
+            <div class="footer-link">
+                <h4>網站地圖</h4>
+                <ul>
+                    <li><a href="#">商品介紹</a></li>
+                    <li><a href="#three_principles">三大原則</a></li>
+                    <li><a href="#about_rt">關於我們</a></li>
+                    <li><a href="#contact_us">聯絡我們</a></li>
+                    <li><a href="roll_page.html">生乳捲</a></li>
+                    <li><a href="tart_page.html">塔</a></li>
+                </ul>
+                <ul>
+                    <li><a href="member_login.html">會員專區</a></li>
+                    <li><a href="product.html">商品總覽</a></li>
+                    <li><a href="faq.html">購物說明</a></li>
+                    <li><a href="cart.html">購物車</a></li>
+                </ul>
+            </div>
+            <!-- <div class="footerlogo"><img src="" alt=""></div> -->
+            <div class="footer-list-item">
+                <a href="https://www.facebook.com/?stype=lo&jlou=Aff6nyDXmIRUSukXEFprLuMiTICNX3RloZv9GGH9Y2bYdDKCVZGNizOYntreBG81Su5QdPJO3kITxY6AH_4gYKKDoQdu9OVT2dAjYGh14M8B7A&smuh=34185&lh=Ac8RAy07oCrQ11Fe"
+                    target="_blank"><i class="fab fa-facebook-square fa-3x"></i></a>
+                <a href="https://www.instagram.com/?hl=zh-tw" target="_blank"><i class="fab fa-instagram fa-3x"></i></a>
+            </div>
+        </div>
+    </footer>
+    <div class="copyright">版權所有 © 2020 Roll & Tart Company. All Rights Reserved.</div>
+
+    <script>
+        var app = new Vue({
+  el: '#app',
+  data: {
+    itemList: [
+      {
+        id: '1',
+        itemName: '原味生乳捲',
+        imgUrl: 'images/roll-02/roll-01-plain.png',
+        price: '90',
+        count: '1'
+      },
+      {
+        id: '2',
+        itemName: '靜岡抹茶生乳捲',
+        imgUrl: 'images/roll-02/roll-02-matcha.png',
+        price: '90',
+        count: '1'
+      },
+      {
+        id: '3',
+        itemName: '島嶼百香',
+        imgUrl:'images_tart/tart-02/tart_02.png',
+        price: '120',
+        count: '1'
+      },
+    
+    ]
+
+  },
+  methods: {
+    handlePlus: function (item) {
+      console.log(item);
+      item.count++;
+    },
+    handleSub: function (item) {
+      console.log(item);
+      if (item.count > 1) {
+        item.count--;
+      }
+    },
+    handledelete: function (index) {
+      this.itemList.splice(index, 1);
+    }
+  }
+  ,
+  computed: {
+
+  }
+})
+    </script>
+</body>
+
+</html>
